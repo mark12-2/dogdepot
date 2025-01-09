@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogDepot - Employee Resources</title>
+    <link rel="icon" type="image/x-icon" href="images/paw.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="about">
+
+    <div class="topnav">
+        <img class="mlogo" src="images/logo1.png" alt="logo">
+    
+        <a class="btn" onclick="myFunction1()" href="home_page.html">HOME</a>
+      
+        <a class="btn" onclick="myFunction2()" href="about.html">ABOUT</a>
+        
+        <a class="btn" onclick="myFunction3()" href="client_services.html">CLIENT SERVICES</a>
+      
+        <a class="btn" onclick="myFunction4()" href="emp_resources.html">RESOURCES</a>
+    
+        <a class="btn" onclick="myFunction5()" href="contacts.html">CONTACT</a>
+             
+    </div>
+      
+    
+    <section class="emp_resources">
+        <h1>Job Offerings</h1>
+        <!-- feature  -->
+        <div class="j_o">
+        <section class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img class="imagesize" src="images/doggo.jpg">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img class="imagesize"src="images/secretary.jpg">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img class="imagesize" src="images/janitor.jpg">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+          </section></div>
+            
+            
+        <h2>Dogdepot is in need of:</h2>
+      <ul>
+        <li>Veterinarian</li>
+        <p>(Graduate of Doctor of Veterinary Medicine)</p>
+        <li>Secretary</li>
+        <p>College Graduate (Any course)</p>
+        <li>Driver</li>
+        <p>With Professional License</p>
+        <li>Utility Guys</li>
+        <p>High School Graduate with any unique skills</p>
+      </ul>
+      <br><br><br><br><br>
+      <section class="empben">
+        <center><h1> Employee Benefits</h1></center>
+        <ul class="empben_text">
+            <li>Free Training <br> - includes budget every training session.</li>
+            <li>Exact Payroll</li>
+            <li>Insurance</li>
+            <li>Free uniform</li>
+            <li>Unli Snacks</li>
+        </ul>
+    </section>
+
+        <h1>Engagement and Training</h1>
+        <pre class="preconts">
+            - Training consists of hours in the field.
+            - Enhancing skills through medical and care support.
+            - Benefits will be given depending on the daily 
+              attendance during training days
+            - Medical training will be conducted with 
+              professionals guidances.
+            - Other trainings will be discussed during the sessions.
+        </pre>
+        <br><br><br><br><br>
+        <h1>Medical Services</h1>
+        <div class="ms">
+            <pre class="preconts">
+                Our Company has contacts in terms of medical service to 
+                the government and to other private companies in order to ensure
+                healthy environment for our employees specially to our clients.
+    
+                Our staff are highly trained and will ensure service that is 
+                needed anyone.
+            </pre></div>
+        <img class="" src="images/service1.jpg" alt="dog" width="550px" height="350px">
+        <br><br><br><br><br><br>
+        <h1>Occupational Safety and Health</h1>
+        <img class="s1" src="images/service2.jpg" alt="dog" width="550px" height="350px">
+        <pre class="preconts">
+            We provide care and extensive management in our team...
+            No one is left behind,
+            and insuring that every service and help is safety
+            and within the standards of dog health and maintaining
+            good health for them and the environment.
+        </pre>
+        <br><br><br><br><br><br><br><br><br>
+        <h1>Office of Workplace Equity</h1>
+        <img class="" src="images/office.jpg" alt="dog" width="550px" height="350px">
+        
+        <pre class="preconts s2">
+            We play a safe role in the office
+            And insuring security whithin the vicinity of every office 
+            we sustain in order to uphold unity and quality service.
+        </pre>
+
+    </section>
+    <center>  
+        <h1 class="homeee">Organization Chart</h1>
+        <img src="images/Beige_Luxurious_Company_Organization_Graph-removebg-preview.png" alt="Organization Chart" width="650px" height="400px">
+    </center>
+    <br><br><br>
+    <center><p class="cs">...</p></center>
+
+
+    <!-- javascript feature -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+</body>
+</html>
+
+<script>
+  function myFunction1() {
+    alert("Hello! Welcome to Dog Depot...");
+  }
+  function myFunction2() {
+    alert("About Section...");
+  }
+  
+  function myFunction3() {
+    alert("Client Services Section...");
+  }
+  
+  function myFunction4() {
+    alert("Employee Resources Section...");
+  }
+  function myFunction5() {
+    alert("Contacts of our Company...");
+  }
+  
+  </script>
