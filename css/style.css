@@ -1,0 +1,300 @@
+/*wholepage*/
+
+/*top navbar style*/
+
+  .topnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 20px 720px;
+      background-color: #58505086;
+      z-index: index 1; 
+  }
+  
+  .mlogo{
+    position: absolute;
+    top: 5%;
+    width: 210px;
+    left: 35px; 
+  }
+
+  .btn {
+    font-size: 17px;  
+    text-decoration: none;
+    color: white;
+    padding: 14px 15px;
+    font-family: cursive;
+    margin: 0;
+  }
+  
+  .btn:hover {
+    color:burlywood;
+  }
+  
+  .logo {
+    position: absolute;
+    width: 60px;
+    top: 10px; 
+    font-family: ink free;
+    font-size: 37px;
+    color: white;
+  }
+  
+
+  
+  /*front page*/
+/*body background*/
+.fpage {
+    background-image: url('../images/dogbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    background-size: cover;
+            }
+
+
+/*texts*/
+
+.welcome{
+  font-family: ink free;
+  font-size: 500%;
+  color: #ddd;
+  margin-left: 5%;
+  margin-top: 150px;
+}
+.fellow{
+  font-family: ink free;
+  font-size: 190%;
+  color: #ddd;
+  margin-left: 7%;
+}
+
+/*home*/
+/*home background*/
+.home{
+    background-image: url(../images/homebg.jpeg);
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+.homeee {
+  margin-top: 100px;
+  margin-left: 50px;
+  font-family: ink free;
+  color: white;
+  
+
+}
+.prehome{
+  font-family: cursive;
+  font-size: 18px;
+  color: white;
+}
+
+ul {
+  list-style-type:disc;
+  color: white;
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: 100;
+}
+.manager{
+  float: right;
+  margin-top: 150px;
+  margin-right: 10px;
+  font-family: ink free;
+  color: white;
+}
+
+/*about*/
+.about{
+background-color: rgb(175, 167, 126);    
+}
+
+/*background-color: #803333;    */
+
+.vsv{
+  margin-top: 100px;
+  margin-left: 50px;
+  font-family: ink free;
+  font-size: 27px;
+  color: white;
+}
+.prevsv{
+  font-family: cursive;
+  font-size: 22px;
+  color: white;
+}
+.doggy{
+  float: right;
+  margin-top: 100px;
+  margin-right: 50px ;
+}
+/*contacts*/
+.contacts{
+  background-image: url('../images/contactsbg.webp');
+  background-size: cover;
+}
+
+.contact{
+  margin-left: 80px;
+  margin-top: 120px;
+  font-family: ink free;
+  color: white;
+  background-color: #7c727286;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.hover:hover{
+ background-color:rgba(255, 255, 255, 0);
+}
+
+/*employees resources*/
+.emp_resources{
+  margin-top: 120px;
+  margin-left: 50px;
+  font-family: ink free;
+  font-size: 20px;
+  color: white;
+}
+
+.ms{
+  float: right;
+  margin-right: 90px;
+  
+}
+
+/* images */
+.j_o{
+  float: right;
+  margin-right: 120px;
+  margin-top: 50px;
+  position: relative;
+  z-index: index 2;
+}
+
+
+.preconts{
+  font-family: cursive;
+  font-size: 18px;
+  color: white;
+}
+.empben_text{
+  font-family: cursive;
+  font-size: 18px;
+  color: white;
+}
+.empben{
+  float: right;
+  margin-right: 150px;
+  margin-top: 50px;
+  border: white;
+  border-style: dashed;
+  width: 430px;
+}
+
+/*images employees resources*/
+
+.serv1{
+  margin-top: 100px;
+  margin-right: 100px;
+  float: right;
+}
+
+a{
+  outline: none;
+}
+
+/* client services */
+.cs{
+  font-family: ink free;
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+}
+/* images positioning */
+.s1{
+  float: right;
+  margin-right: 70px;
+}
+
+.s2{
+  float: right;
+  margin-right: 150px;
+}
+
+/* feature */
+/* javascript slideshow */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  
+  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.imagesize{
+  width: 550px; 
+  height: 350px;
+}
